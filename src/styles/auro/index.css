@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif !important;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.loader-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-wrap-no-back {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-small {
+  width: 30px;
+  height: 30px;
+  border: 2px solid transparent;
+  border-top: 2px solid var(--gradient-yellow-1) !important;
+  border-radius: 50%;
+  animation: rotate 2s infinite forwards linear;
+}
+.loader-medium {
+  width: 45px;
+  height: 45px;
+  border: 3px solid transparent;
+  border-top: 3px solid var(--gradient-yellow-1) !important;
+  border-radius: 50%;
+  animation: rotate 2s infinite forwards linear;
+}
+.loader {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-top: 4px solid var(--gradient-yellow-1) !important;
+  animation: rotate 2s infinite forwards linear;
+}
+
+.loader-img{
+  border-top: none !important;
+  border-radius: 0;
+  border: none;
+}
+a {
+  color: #fff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #root {
+    /* height: auto; */
+  }
+}
+
+.language-span {
+  margin: 0 3px;
+  color: #312e33;
+}
+.LanguageOutlined {
+  color: var(--gradient-yellow-1) !important;
+}
+
+.yellowBack {
+  background-color: var(--gradient-yellow-1) !important;
+}
+
+.langPopper {
+  z-index: 1000;
+}
+
+.langPopperBtn {
+  text-transform: lowercase;
+}
+
+.cameraSelectionIcon {
+  color: var(--gradient-yellow-1);
+}
+
+.micSelectionIcon {
+  color: var(--gradient-yellow-1);
+}
+
+.broserView {
+  height: 100%;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slider {
+  height: auto !important;
+}
+
+.swiper-container {
+  height: 100% !important;
+}
+
+.swiper-pagination-bullets {
+  bottom: 5px !important;
+}
+
+.css-10hburv-MuiTypography-root, .css-yb0lig, .css-1ujsas3 {
+  font-family: "Poppins" !important;
+}
+
+.badge-color span{
+  background-color: var(--color-btn) !important;
+}
+
+
+.mr{
+  margin-right: 25% !important;
+}
+
+.mobile-video video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: 11; */
+}
+
+.flip{
+  transform: rotateY(180deg);
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
+  font-family: inherit !important;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root{
+  font-family: inherit !important;
+}
+
+.board-close{
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.full-h{
+  height: 100% !important;
+}

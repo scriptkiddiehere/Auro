@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.DC-Desktop-Container {
+  height: 100vh;
+}
+
+.DC-Desktop-Header {
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-bg-border);
+  padding: 0px 50px;
+}
+
+.dc-desktop-box {
+  height: 100%;
+}
+
+.wb-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.dc-dektop-appbar {
+  position: fixed;
+}
+
+.dc-desktop-toolbar {
+  padding: 10px 60px;
+}
+
+.dc-desktop-drawer-header {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.video-root_container {
+  padding: 20px 50px;
+  margin-right: 0;
+  position: relative !important;
+}
+
+.shrink {
+  width: calc(100% - 25%);
+}
+
+.DC-Desktop-Header .LanguageOutlined {
+  color: #312e33 !important;
+}
+
+.DC-Desktop-Header .language-span {
+  color: #312e33 !important;
+  font-family: inherit !important;
+}
+
+.DC-Desktop-Main {
+  height: 93%;
+}
+
+.meeting-start {
+  width: 100%;
+  height: 100%;
+  padding: 30px 0px;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  /* background-color: var(--color-white); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.local-video {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  /* background-color: #000; */
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid var(--color-grey);
+}
+
+.local-video video {
+  object-fit: cover !important;
+  width: 100%;
+  height: 100%;
+}
+
+.float {
+  position: absolute;
+  color: #000;
+  z-index: 100;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.permissionError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.permissionError button {
+  margin-top: 12px;
+}
+
+.meeting-start__select {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.dropdowns {
+  /* width: 40%; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+.right {
+  width: 50%;
+  display: flex;
+  /* background-color: violet; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.right-wrap {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.joinMeeting {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 60%;
+  box-shadow: 0px 6px 10px rgb(121 126 148 / 10%);
+  border-radius: 10px;
+  background-color: white;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.joinmeeting_form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin-bottom: 1rem;
+}
+
+.joinmeeting_form button {
+  background: linear-gradient(
+    0deg,
+    var(--gradient-yellow-2),
+    var(--gradient-yellow-1)
+  );
+  border: 1px solid rgb(255 178 8 / 50%);
+  padding: 2.5%;
+  border-radius: 0.5vw;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: inherit;
+}
+.dc-desktop-box {
+  background-color: var(--color-bg) !important;
+  display: "flex" !important;
+  color: white;
+}
+.dc-dektop-appbar {
+  background-color: var(--color-white) !important;
+  top: auto !important;
+  bottom: 0 !important;
+}
+.advancedSettingButton {
+  width: 95%;
+}
+
+.smallIconButton {
+  width: 50px;
+  height: 40px;
+  background-color: var(--color-white);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.toolbarLeftIconButtons {
+  display: flex !important;
+  width: 35% !important;
+  justify-content: space-between !important;
+}
+
+.toolbarMiddleIconButton {
+  display: flex !important;
+  width: 30%;
+  justify-content: center;
+}
+
+.toolbarRightIconButtons {
+  display: flex !important;
+  width: 35% !important;
+  justify-content: space-between !important;
+}
+
+.end-btn {
+  background-color: #de3d3d !important;
+}
+.advancedSettingButton button {
+  width: 100%;
+  background-color: white;
+  border: 1px solid whitesmoke;
+  padding: 2.5%;
+  border-radius: 0.5vw;
+  color: #1a323f;
+  cursor: pointer;
+}
+
+.advancedSettingButton button:hover {
+  border: 1px solid var(--gradient-yellow-1);
+}
+
+.advancedSettingContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.advancedSettingContainer .MuiSvgIcon-root {
+  color: var(--gradient-yellow-1);
+  margin-right: 5px;
+}
+
+.advancedSettingContent {
+  text-align: left;
+}
+
+.namefield {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.namefield label {
+  font-size: 18px;
+  font-weight: 300;
+  color: #312e33;
+  margin-bottom: 1rem;
+}
+
+.namefield input {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  border: 1px solid #d6d6d6;
+  padding: 3%;
+  font-size: 14px;
+  border-radius: 0.5vw;
+}
+
+.dropdown button {
+  background-color: var(--gradient-yellow-2);
+  border: none;
+}
+
+.dropdown button:hover {
+  opacity: 0.9;
+  background-color: var(--gradient-yellow-2);
+}
+
+.show > .btn-primary.dropdown-toggle {
+  background-color: var(--gradient-yellow-2) !important;
+}
+
+.MuiDialog-paper {
+  width: 300px !important;
+}
+
+.adminRoleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.adminRoleContainer label {
+  margin-left: 10px;
+}
+
+.advanceheader {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.disableVideo {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #202020;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.disableVideo .MuiAvatar-root {
+  height: 200px;
+  width: 200px;
+}
+
+.local-video {
+  background-color: #202020;
+  position: relative;
+}
+
+.videoActionButtons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  bottom: 10px;
+  width: 100%;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.videoActionButtons .MuiSvgIcon-root {
+  cursor: pointer;
+  font-size: x-large;
+  color: white;
+  opacity: 1 !important;
+}
+
+.local-video video {
+  object-fit: contain;
+}
+
+.toggle-btn {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* opacity: 0.1; */
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.toggle-btn:hover {
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  transform: scale(1.1);
+}
+
+/* meeting desktop css */
+.video-root_container {
+  height: calc(100% - 66px) !important;
+  position: relative !important;
+}
+
+.full-h{
+  height: 100% !important;
+}
+.videos-container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.local-video_wrap {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* background-color: turquoise; */
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.local-video_wrap .info {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+.local-video_wrap .mic-status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.global-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remote-video_wrap {
+  width: 17%;
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 5px;
+  /* background-color: violet; */
+}
+
+.no-remote {
+  display: none;
+}
+
+.remote-video_wrap::-webkit-scrollbar {
+  /* appearance: none; */
+  width: 6px;
+}
+
+.remote-video_wrap::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--color-icon);
+}
+
+.video-box {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  background-color: var(--color-text);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-remote {
+  display: none;
+}
+.remote-video-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background-color: var(--color-text);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.global-video-player {
+  width: 100%;
+  height: 100%;
+  /* object-fit: unset; */
+}
+
+.video-box:not(:last-child) {
+  margin-bottom: 10px;
+}
+.video-participants {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.participants-avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: var(--color-icon);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.participants-avatar span {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.status-icon {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.participant-name {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+
+.participant-name p {
+  font-size: 14px;
+}
+
+.drawer-wrap {
+  padding: 25px 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.smallIconButton .MuiSvgIcon-root {
+  color: var(--color-icon);
+}
+
+.toolbarMiddleIconButton span {
+  margin-right: 10px;
+}
+
+.timeInfo {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+}
+
+.timeInfo span {
+  color: var(--color-text);
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.box {
+  width: 5px;
+  height: 15px;
+  background-color: blue;
+  border-radius: 100px;
+}
+.wave-wrap {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 999;
+}
+.box1 {
+  animation: quiet 1s ease-in-out infinite forwards;
+}
+.box2 {
+  animation: loud 1s ease-in-out infinite forwards;
+}
+.box3 {
+  animation: quiet 1s ease-in-out infinite forwards;
+}
+.box4 {
+  animation: loud 1s ease-in-out infinite forwards;
+}
+.box5 {
+  animation: quiet 1s ease-in-out infinite forwards;
+}
+@keyframes quiet {
+  25% {
+    transform: scaleY(0.6);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(0.8);
+  }
+}
+
+@keyframes normalA {
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(0.6);
+  }
+}
+@keyframes loud {
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(1.2);
+  }
+}
+
+
+.fileload-wrap{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center
+}
+
+.fileload{
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-msg);
+  border-radius: 6px;
+}
+.filename{
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 3px;
+  color: #fff;
+}

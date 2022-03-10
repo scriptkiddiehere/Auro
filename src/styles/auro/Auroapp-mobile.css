@@ -1,0 +1,370 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.StartmeetingMobile {
+  height: 100vh;
+  width: 100vw;
+  padding: 10px 5px;
+}
+
+.mobileHeader {
+  text-align: end;
+  background-color: white;
+}
+
+.mobile-video {
+  position: relative;
+  height: 35%;
+  width: 100%;
+  background-color: #202020;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid var(--color-grey);
+}
+
+.mobile-video_grid{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #202020;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid var(--color-grey);
+}
+
+.joinMeetingMobile {
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 6px 10px rgb(121 126 148 / 10%);
+  border-radius: 10px;
+  background-color: white;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.joinmeeting_form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin-bottom: 1rem;
+}
+
+.joinmeeting_form button {
+  background: linear-gradient(0deg, #ffc637, #ffb002);
+  border: 1px solid rgb(255 178 8 / 50%);
+  padding: 2.5%;
+  border-radius: 0.5vw;
+  color: #1a323f;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.namefield {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.namefield label {
+  font-size: 18px;
+  font-weight: 300;
+  color: #312e33;
+  margin-bottom: 1rem;
+}
+
+.namefield input {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  border: 1px solid #d6d6d6;
+  padding: 3%;
+  font-size: 14px;
+  border-radius: 0.5vw;
+}
+
+.dropdowns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.DC-Mobile-Container {
+  height: 100%;
+  width: 100%;
+  background-color: #202125;
+  color: white;
+  padding: 0 8%;
+}
+
+.DC-Mobile-Header {
+  height: 10%;
+  border-bottom: 1px solid #37383e;
+  display: flex;
+  align-items: center;
+}
+
+.DC-Mobile-HeaderLeft {
+  flex: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.DC-UserAvatar {
+  display: flex;
+}
+
+.DC-UserAvatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.DC-Mobile-HeaderRight {
+  flex: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.DC-Mobile-HeaderRight .MuiSvgIcon-root {
+  margin: 5px;
+}
+
+.camera-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camera-switch:active {
+  animation: rotate 0.5s;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(180deg);
+  }
+}
+
+.speaker-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .DC-Notification {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background: #202125;
+  border: 1px solid #37383e;
+  position: relative;
+  border-radius: 13px;
+  align-items: center;
+  justify-content: center;
+}
+
+.DC-NotificationDot {
+  background: #ff5252;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  z-index: 2;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  transform: scale(0.5);
+  box-shadow: 0 0 0 0 #ff5252;
+  animation: pulse 2s infinite;
+} */
+
+/* @keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    box-shadow: 0 0 0 0 #f17474;
+  }
+
+  50% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 #ff5252;
+  }
+
+  100% {
+    transform: scale(0.5);
+    box-shadow: 0 0 0 0 #f17474;
+  }
+} */
+
+.DC-Language {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: flex-end;
+  border: none;
+}
+
+.DC-Language .MuiButton-root {
+  padding: 0;
+}
+
+.DC-Language span {
+  color: white;
+}
+
+.DC-Language .MuiSvgIcon-root {
+  color: white !important;
+}
+
+.DC-Mobile-MeetView {
+  height: 80%;
+  position: relative;
+}
+
+.MeetingName {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.MeetingName h2 {
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.Carousel {
+  height: 100%;
+}
+
+.DC-participant {
+  display: flex;
+  height: 97%;
+  border-radius: 4vw;
+}
+
+.DC-participantGrid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-content: baseline;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.DC-participantGrid ul li {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+
+.DC-participantGrid {
+  height: 96%;
+}
+
+.DC-participantGrid ul li img {
+  border-radius: 2vw;
+  object-fit: cover;
+}
+
+.DC-Mobile-Footer {
+  height: 10%;
+  border-top: 1px solid #37383e;
+  display: flex;
+  align-items: center;
+  margin: 0px -9%;
+}
+
+.DC-Mobile-Footer ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.DC-EndButton {
+  height: 50px !important;
+  width: 50px !important;
+  padding: 0 !important;
+  background-color: #ff5050 !important;
+}
+
+.DC-Mobile-Footer li {
+  height: 45px;
+  width: 45px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #333333;
+}
+
+.badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid darkslategrey;
+  background-color: #333333;
+  top: -8px;
+  right: -8%;
+}
+
+.DC-Mobile-SelfView {
+  position: absolute;
+  height: 18vh;
+  width: 12vh;
+  background-color: black;
+  bottom: 15px;
+  right: 0px;
+  border-radius: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.DC-Mobile-SelfView img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+li .MuiSvgIcon-root {
+  font-size: 30px !important;
+}
+
+.DC-Mobile-modalwrap {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000 !important;
+}

@@ -1,0 +1,18 @@
+:root {
+  --mobile-primary: rgb(32, 33, 37);
+  --mobile-btn-primary: #333333;
+  --color-white: #fff;
+  --gradient-blue-1: #2ab6fe;
+  --gradient-blue-2: #0f8be8;
+  --color-btn: #0e78f9;
+  --color-blue: #276ef1;
+  --color-grey: #707070;
+  --color-bg:#F8F9FB;
+  --color-bg-border:#E8E8E8;
+  --color-text: #312E33;
+  --color-icon: #818181;
+  --gradient-yellow-1: #2160fd;
+  --gradient-yellow-2: #2160fd;
+  --color-red: #e91e31;
+  --color-msg:#232634;
+}
